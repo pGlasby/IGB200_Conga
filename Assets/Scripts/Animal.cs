@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class Animal : MonoBehaviour
 {
-    public Transform player;
+    private Transform player;
     private bool isActive = false;
     const float distance = 3f;
     Vector3 DistancefromTarget;
-    private float speed = PlayerController.speed;
+    public GameManager gameManager;
     private string[] animalTypes = new string[5];
-
+    private bool isGrounded = false;
 
     // Update is called once per frame
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+
         animalTypes[0] = "bird";
         animalTypes[1] = "reptile";
         animalTypes[2] = "fish";
@@ -29,12 +31,12 @@ public class Animal : MonoBehaviour
 
     void LateUpdate()
     {
-        
         if(isActive == true)
         {
             if(this.transform == CongaLineController.instance.followers[0])
             {
                 Follow(player);
+                
             }
             else if(this.transform == CongaLineController.instance.followers[1])
             {
@@ -96,14 +98,26 @@ public class Animal : MonoBehaviour
                 print("I can't take another animal with me now!");
 
         }
+       
+
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Ground" && isGrounded == false)
+        {
+            this.GetComponent<Collider>().isTrigger = true;
+            Destroy(this.GetComponent<Rigidbody>());
+            isGrounded = true;
+        }
+    }
+
     private void Follow(Transform target)
     {
         DistancefromTarget = transform.position - target.position;
         transform.LookAt(target);
         if(DistancefromTarget.magnitude > distance)
         {
-            transform.Translate(0.0f, 0.0f, speed * Time.deltaTime);
+            transform.Translate(0.0f, 0.0f, gameManager.playerSpeed * Time.deltaTime);
         }
     }
 

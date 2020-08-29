@@ -6,10 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     
     public CharacterController controller;
-    public static float speed = 6f;
     public float turnSmoothTime = 0.1f;
     public float turnSmoothVelocity;
-    public float gravity = 10f;
+    public GameManager gameManager;
     
     // Start is called before the first frame update
     void Start()
@@ -31,7 +30,7 @@ public class PlayerController : MonoBehaviour
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
         }
-        direction.y -= gravity * Time.deltaTime;
-        controller.Move(direction * speed * Time.deltaTime);
+        direction.y -= gameManager.gravity * Time.deltaTime;
+        controller.Move(direction * gameManager.playerSpeed * Time.deltaTime);
     }
 }
