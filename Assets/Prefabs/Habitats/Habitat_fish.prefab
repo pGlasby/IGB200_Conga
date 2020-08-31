@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8522398998409314419
+--- !u!1 &5300417395729490859
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2605085407686955555}
-  - component: {fileID: 7205831752278492531}
-  - component: {fileID: 7786135473139483785}
-  - component: {fileID: 3378617357316635955}
-  - component: {fileID: 8932613877437455716}
-  - component: {fileID: 2258090219797121265}
+  - component: {fileID: 1249842975599964808}
+  - component: {fileID: 5078594319033087359}
+  - component: {fileID: 8894487440448606116}
+  - component: {fileID: 3108395984387671803}
+  - component: {fileID: 8634589329059380334}
   m_Layer: 0
-  m_Name: Amphibian
+  m_Name: Habitat_fish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2605085407686955555
+--- !u!4 &1249842975599964808
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8522398998409314419}
+  m_GameObject: {fileID: 5300417395729490859}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13, y: 0.9, z: 14.706093}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 13.462498, y: 0.29083133, z: 14.293906}
+  m_LocalScale: {x: 4.832, y: 1, z: 8.9041}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7205831752278492531
+--- !u!33 &5078594319033087359
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8522398998409314419}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7786135473139483785
+  m_GameObject: {fileID: 5300417395729490859}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8894487440448606116
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8522398998409314419}
-  m_Enabled: 0
+  m_GameObject: {fileID: 5300417395729490859}
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -82,48 +81,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &3378617357316635955
-CapsuleCollider:
+--- !u!65 &3108395984387671803
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8522398998409314419}
+  m_GameObject: {fileID: 5300417395729490859}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &8932613877437455716
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8522398998409314419}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &2258090219797121265
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8634589329059380334
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8522398998409314419}
+  m_GameObject: {fileID: 5300417395729490859}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f3d133c3a90d467e80b928f97a9943e, type: 3}
+  m_Script: {fileID: 11500000, guid: dcaa951824de1481f8076c4b174f6974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalName: amphibian
-  gameManager: {fileID: 6313261952724710779, guid: 9876af5b19e8a493b91fed758fab4b24,
-    type: 3}
+  player: {fileID: 0}
+  animalSpawner: {fileID: 0}
+  type: fish

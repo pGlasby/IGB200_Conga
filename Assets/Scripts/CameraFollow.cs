@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    //target to follow
     public Transform target;
 
     public float speed = 0.125f;
@@ -16,6 +17,5 @@ public class CameraFollow : MonoBehaviour
 
         //this one is for more dynamic camera :)
         //transform.LookAt(target);
-
     }
 }

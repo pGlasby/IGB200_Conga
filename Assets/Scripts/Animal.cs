@@ -4,28 +4,25 @@ using UnityEngine;
 
 public class Animal : MonoBehaviour
 {
-    private Transform player;
+    //variables
+    private bool isGrounded = false;
+    private float distanceToPickUp = 5f;
+    public string animalName;
     private bool isActive = false;
     const float distance = 3f;
+
+
     Vector3 DistancefromTarget;
+
+    private Transform player;
     public GameManager gameManager;
-    private string[] animalTypes = new string[5];
-    private bool isGrounded = false;
 
     // Update is called once per frame
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
-        animalTypes[0] = "bird";
-        animalTypes[1] = "reptile";
-        animalTypes[2] = "fish";
-        animalTypes[3] = "mammal";
-        animalTypes[4] = "amphibian";
-        this.name = animalTypes[Random.Range(0, animalTypes.Length)];
-
-
+        this.name = animalName;
     }
 
 
@@ -81,7 +78,7 @@ public class Animal : MonoBehaviour
         }
 
     }
-
+    //this function is developed for playtesting purposes (delete before the release)
     private void OnTriggerEnter(Collider other)
     {
         if(other.transform == player)
@@ -101,16 +98,41 @@ public class Animal : MonoBehaviour
        
 
     }
+    //this function adapting the controlls for smartphones
+    /*private void OnMouseDown()
+    {
+        DistancefromTarget = transform.position - player.position;
+        if(DistancefromTarget.magnitude <= distanceToPickUp)
+        {
+            isActive = true;
+            if (CongaLineController.instance.followers[4] == null)
+            {
+                CongaLineController.instance.followers[CongaLineController.instance.counter] = this.transform;
+                this.GetComponent<Collider>().isTrigger = false;
+                CongaLineController.instance.counter += 1;
+                print(this.name);
+            }
+            else
+                print("I can't take another animal with me now!");
+        }
+    }*/
+    //checks collision. if collider is ground - all good, otherwise - recreate object
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Ground" && isGrounded == false)
         {
+            this.GetComponent<MeshRenderer>().enabled = true;
             this.GetComponent<Collider>().isTrigger = true;
             Destroy(this.GetComponent<Rigidbody>());
             isGrounded = true;
         }
+        else if(collision != null)
+        {
+            Destroy(this.gameObject);
+            AnimalSpawner.instance.counter -= 1;
+        }
     }
-
+    //function to follow previous gameobject
     private void Follow(Transform target)
     {
         DistancefromTarget = transform.position - target.position;

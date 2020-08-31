@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4583751319204305337}
-  - component: {fileID: 8269151609882342665}
+  - component: {fileID: 6313261952724710779}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8269151609882342665
+--- !u!114 &6313261952724710779
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,6 +43,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 222ae8d3f4e3041af87ee17df3a4d69b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animals: []
+  animals:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   playerSpeed: 20
   gravity: 50
+  leftWall: {fileID: 0}
+  rightWall: {fileID: 0}
+  topWall: {fileID: 0}
+  bottomWall: {fileID: 0}

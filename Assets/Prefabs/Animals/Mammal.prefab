@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2751172442504145972}
   - component: {fileID: 3324652663996149198}
   - component: {fileID: 7839961677370250356}
+  - component: {fileID: 1366579322569332129}
   - component: {fileID: 4168475015851127843}
-  - component: {fileID: 839289656019145258}
   m_Layer: 0
   m_Name: Mammal
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3777330081325836596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13, y: 0.9, z: 14.706093}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.95688, y: 0.95688, z: 0.95688}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -50,7 +50,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3777330081325836596}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -96,6 +96,21 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1366579322569332129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3777330081325836596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3d133c3a90d467e80b928f97a9943e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalName: mammal
+  gameManager: {fileID: 6313261952724710779, guid: 9876af5b19e8a493b91fed758fab4b24,
+    type: 3}
 --- !u!54 &4168475015851127843
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -112,17 +127,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &839289656019145258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3777330081325836596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f3d133c3a90d467e80b928f97a9943e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 8269151609882342665, guid: 9876af5b19e8a493b91fed758fab4b24,
-    type: 3}

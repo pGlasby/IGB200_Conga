@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8522398998409314419
+--- !u!1 &4814174719576883413
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2605085407686955555}
-  - component: {fileID: 7205831752278492531}
-  - component: {fileID: 7786135473139483785}
-  - component: {fileID: 3378617357316635955}
-  - component: {fileID: 8932613877437455716}
-  - component: {fileID: 2258090219797121265}
+  - component: {fileID: 5297555642443864687}
+  - component: {fileID: 9091476130656196042}
+  - component: {fileID: 6471565009727283456}
+  - component: {fileID: 3525010826376410291}
+  - component: {fileID: 7976416386754189702}
+  - component: {fileID: 595437087179695553}
   m_Layer: 0
-  m_Name: Amphibian
+  m_Name: mammal_test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2605085407686955555
+--- !u!4 &5297555642443864687
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8522398998409314419}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13, y: 0.9, z: 14.706093}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 4814174719576883413}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.457918, y: 2.2896156, z: -9.059967}
+  m_LocalScale: {x: 47.11763, y: 47.11763, z: 47.11763}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7205831752278492531
+--- !u!33 &9091476130656196042
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8522398998409314419}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7786135473139483785
+  m_GameObject: {fileID: 4814174719576883413}
+  m_Mesh: {fileID: -3345993853237775330, guid: 80245ac800be2924c870d95318f540e7, type: 3}
+--- !u!23 &6471565009727283456
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8522398998409314419}
-  m_Enabled: 0
+  m_GameObject: {fileID: 4814174719576883413}
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 5561349426305759274, guid: 80245ac800be2924c870d95318f540e7, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,27 +82,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &3378617357316635955
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8522398998409314419}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &8932613877437455716
+--- !u!54 &3525010826376410291
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8522398998409314419}
+  m_GameObject: {fileID: 4814174719576883413}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -112,18 +98,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2258090219797121265
+--- !u!114 &7976416386754189702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8522398998409314419}
+  m_GameObject: {fileID: 4814174719576883413}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f3d133c3a90d467e80b928f97a9943e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalName: amphibian
+  animalName: mammal
   gameManager: {fileID: 6313261952724710779, guid: 9876af5b19e8a493b91fed758fab4b24,
     type: 3}
+--- !u!65 &595437087179695553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4814174719576883413}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.033986066, y: 0.045099325, z: 0.13817775}
+  m_Center: {x: 0, y: 0.022528145, z: -0.024096934}
