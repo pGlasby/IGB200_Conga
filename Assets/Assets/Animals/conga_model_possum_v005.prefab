@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4922297078787404033}
   - component: {fileID: 7181961939025659339}
   m_Layer: 0
-  m_Name: conga_model_possum_v004
+  m_Name: conga_model_possum_v005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
