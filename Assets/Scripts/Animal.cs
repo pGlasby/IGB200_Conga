@@ -15,12 +15,13 @@ public class Animal : MonoBehaviour
     Vector3 DistancefromTarget;
 
     private Transform player;
-    public GameManager gameManager;
+    private GameManager gameManager;
 
     // Update is called once per frame
 
     private void Start()
     {
+        gameManager = Object.FindObjectOfType<GameManager>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         this.name = animalName;
     }
@@ -81,7 +82,7 @@ public class Animal : MonoBehaviour
     //this function is developed for playtesting purposes (delete before the release)
     private void OnTriggerEnter(Collider other)
     {
-        if(other.transform == player)
+        if(other.transform == player && gameManager.phoneVersion == false)
         {
             isActive = true;
             if (CongaLineController.instance.followers[4] == null)
@@ -99,10 +100,10 @@ public class Animal : MonoBehaviour
 
     }
     //this function adapting the controlls for smartphones
-    /*private void OnMouseDown()
+    private void OnMouseDown()
     {
         DistancefromTarget = transform.position - player.position;
-        if(DistancefromTarget.magnitude <= distanceToPickUp)
+        if(DistancefromTarget.magnitude <= distanceToPickUp && gameManager.phoneVersion == true)
         {
             isActive = true;
             if (CongaLineController.instance.followers[4] == null)
@@ -115,7 +116,7 @@ public class Animal : MonoBehaviour
             else
                 print("I can't take another animal with me now!");
         }
-    }*/
+    }
     //checks collision. if collider is ground - all good, otherwise - recreate object
     private void OnCollisionEnter(Collision collision)
     {

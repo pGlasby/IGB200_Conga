@@ -14,10 +14,6 @@ public class CongaLineController : MonoBehaviour
         counter = 0;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
     
 }

@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     //genereal variables
     public float playerSpeed;
     public float gravity;
+    public float timeLimit = 10;
+    public int score;
 
     //border objects
     public GameObject leftWall;
@@ -19,10 +21,13 @@ public class GameManager : MonoBehaviour
     public GameObject topWall;
     public GameObject bottomWall;
 
+    public bool phoneVersion = false;
+
     // Start is called before the first frame update
     void Start()
     {
         instance = this;
+
     }
 
 }
