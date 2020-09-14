@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
     {
         //timeShow = timeLimit;
         timeShow -= Time.deltaTime;
-        timerText.text = timeShow.ToString("0");
+        timerText.text = "Time left:\n" + timeShow.ToString("0");
         rotation -= Vector3.forward * (180/ gameManager.timeLimit) * Time.deltaTime;
         timerImage.transform.rotation = Quaternion.Euler(rotation);
     }
