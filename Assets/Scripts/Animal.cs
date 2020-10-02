@@ -6,7 +6,6 @@ public class Animal : MonoBehaviour
 {
     //variables
     private bool isGrounded = false;
-    private float distanceToPickUp = 5f;
     public string animalName;
     private bool isActive = false;
     const float distance = 3f;
@@ -99,24 +98,7 @@ public class Animal : MonoBehaviour
        
 
     }
-    //this function adapting the controlls for smartphones
-    private void OnMouseDown()
-    {
-        DistancefromTarget = transform.position - player.position;
-        if(DistancefromTarget.magnitude <= distanceToPickUp && gameManager.phoneVersion == true)
-        {
-            isActive = true;
-            if (CongaLineController.instance.followers[4] == null)
-            {
-                CongaLineController.instance.followers[CongaLineController.instance.counter] = this.transform;
-                this.GetComponent<Collider>().isTrigger = false;
-                CongaLineController.instance.counter += 1;
-                print(this.name);
-            }
-            else
-                print("I can't take another animal with me now!");
-        }
-    }
+
     //checks collision. if collider is ground - all good, otherwise - recreate object
     private void OnCollisionEnter(Collision collision)
     {

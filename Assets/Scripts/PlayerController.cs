@@ -13,21 +13,29 @@ public class PlayerController : MonoBehaviour
 
     //game manager
     public GameManager gameManager;
+    public Joystick joystick;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
     {
+        float horizontal;
+        float vertical;
+        horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical");
+        if (gameManager.phoneVersion == false)
+        {
+            horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical");
+        }
+        if (gameManager.phoneVersion == true)
+        {
+            horizontal = joystick.Horizontal;
+            vertical = joystick.Vertical;
+        }
 
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
-        
+
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
         if (direction.magnitude >= 0.1f)
