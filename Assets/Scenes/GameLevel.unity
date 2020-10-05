@@ -9712,7 +9712,7 @@ MonoBehaviour:
   turnSmoothTime: 0.1
   turnSmoothVelocity: 0
   gameManager: {fileID: 1569111305}
-  joystick: {fileID: 0}
+  joystick: {fileID: 1657851112}
 --- !u!1001 &461107773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35281,6 +35281,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1657851109}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1657851112 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+    type: 3}
+  m_PrefabInstance: {fileID: 1657851109}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657851111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1658483822
 PrefabInstance:
   m_ObjectHideFlags: 0
