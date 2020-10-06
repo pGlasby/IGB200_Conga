@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &538860077299917296
+--- !u!1 &7591899630037505794
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 878688797207411530}
-  - component: {fileID: 4295978140169581807}
-  - component: {fileID: 2052117586786009125}
-  - component: {fileID: -45573446683541677}
-  - component: {fileID: 5878378582780263086}
-  - component: {fileID: 395104407452383684}
+  - component: {fileID: 7066157513120304568}
+  - component: {fileID: 6178889505847722525}
+  - component: {fileID: 8240219583007536855}
+  - component: {fileID: 7994079432067912684}
+  - component: {fileID: 4390254419745749053}
+  - component: {fileID: 3599660587250335898}
   m_Layer: 0
-  m_Name: Snake_Final
+  m_Name: conga_mofel_snake_v009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &878688797207411530
+--- !u!4 &7066157513120304568
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538860077299917296}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.02, y: 0.144001, z: -9.04}
-  m_LocalScale: {x: 0.40181124, y: 0.40181124, z: 0.40181124}
+  m_GameObject: {fileID: 7591899630037505794}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.211609, y: 0.44, z: -6.98}
+  m_LocalScale: {x: 0.36187, y: 0.36187, z: 0.36187}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!33 &4295978140169581807
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6178889505847722525
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538860077299917296}
-  m_Mesh: {fileID: 563788531843775990, guid: c15322840e2eb4c4f98dc22ab7dd7f92, type: 3}
---- !u!23 &2052117586786009125
+  m_GameObject: {fileID: 7591899630037505794}
+  m_Mesh: {fileID: 563788531843775990, guid: 936f7a83371579a4ab3e81e67a2df25b, type: 3}
+--- !u!23 &8240219583007536855
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538860077299917296}
+  m_GameObject: {fileID: 7591899630037505794}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -82,13 +82,26 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!54 &-45573446683541677
+--- !u!65 &7994079432067912684
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7591899630037505794}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4160382, y: 0.7089632, z: 20.070852}
+  m_Center: {x: -0.00000023841858, y: 0, z: 0}
+--- !u!54 &4390254419745749053
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538860077299917296}
+  m_GameObject: {fileID: 7591899630037505794}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -98,29 +111,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5878378582780263086
+--- !u!114 &3599660587250335898
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538860077299917296}
+  m_GameObject: {fileID: 7591899630037505794}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f3d133c3a90d467e80b928f97a9943e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalName: Reptile
---- !u!65 &395104407452383684
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538860077299917296}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 20.070852, y: 0.70896316, z: 1.4160376}
-  m_Center: {x: -0.00000047683713, y: 0, z: 0}
+  animalName: snake
