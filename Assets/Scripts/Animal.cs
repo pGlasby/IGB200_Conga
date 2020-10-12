@@ -88,6 +88,7 @@ public class Animal : MonoBehaviour
             {
                 CongaLineController.instance.followers[CongaLineController.instance.counter] = this.transform;
                 this.GetComponent<Collider>().isTrigger = false;
+                Destroy(this.GetComponent<Collider>());
                 CongaLineController.instance.counter += 1;
                 print(this.name);
             }
