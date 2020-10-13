@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - GameManager
   - Instance
+  - BgSound
   layers:
   - Default
   - TransparentFX

@@ -24,7 +24,7 @@ public class InfoUnlocker : MonoBehaviour
             {
                 if (alltimeVariables.questCompletionChecker[i] == false)
                 {
-                    //textInfo[i].text = "UNAVAILABLE";
+
                     textInfoPro[i].text = "UNAVAILABLE";
                 }
             }

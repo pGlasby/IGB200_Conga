@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Quest : MonoBehaviour
 {
 
-    public Text questText;
+    public TMP_Text questText;
     private AlltimeVariables alltimeVariables;
     public int value = -1;
     private Quest instance;
     private GameManager gameManager;
+    private string animalName;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +26,7 @@ public class Quest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        questText.text = "Collect " + gameManager.questValue + " POSSUMS";
+        questText.text = "Collect " + gameManager.questValue + " " + animalName;
 
 
         if(gameManager.questValue <= 0)
@@ -52,24 +54,38 @@ public class Quest : MonoBehaviour
                 if (i == 0)//possum quest
                 {
                     value = 5;
+                    animalName = "POSSUMS";
                     gameManager.questValue = value;
-                    questText.text = "Collect" + value + "POSSUMS";
+                    questText.text = "Collect " + gameManager.questValue + " " + animalName;
                 }
                 if(i == 1)
                 {
+                    value = 5;
+                    animalName = "BIRDS";
+                    gameManager.questValue = value;
+                    questText.text = "Collect " + gameManager.questValue + " " + animalName;
 
                 }
                 if(i == 2)
                 {
-
+                    value = 5;
+                    animalName = "SNAKES";
+                    gameManager.questValue = value;
+                    questText.text = "Collect " + gameManager.questValue + " " + animalName;
                 }
                 if(i == 3)
                 {
-
+                    value = 5;
+                    animalName = "FISH";
+                    gameManager.questValue = value;
+                    questText.text = "Collect " + gameManager.questValue + " " + animalName;
                 }
                 if(i == 4)
                 {
-
+                    value = 5;
+                    animalName = "GECKOS";
+                    gameManager.questValue = value;
+                    questText.text = "Collect " + gameManager.questValue + " " + animalName;
                 }
 
 
