@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7890708181759089158}
   - component: {fileID: 7312639080974714460}
   m_Layer: 0
-  m_Name: conga_model_bird_V004
+  m_Name: bird_final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,8 +93,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0397081, y: 3.7020977, z: 5.701311}
-  m_Center: {x: 0, y: 1.8579382, z: -0.94659543}
+  m_Size: {x: 10, y: 7, z: 10}
+  m_Center: {x: 0, y: 3.23, z: -0.94659543}
 --- !u!54 &7890708181759089158
 Rigidbody:
   m_ObjectHideFlags: 0
