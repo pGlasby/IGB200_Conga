@@ -36,10 +36,9 @@ public class Habitat : MonoBehaviour
                     string name = congaLine.followers[i].name;
                     if (name.ToLower() == type.ToLower())
                     {
-                        if (name.ToLower() == "mammal")
-                        {
-                            gameManager.questValue -= 1;
-                        }
+
+                        gameManager.questValue -= 1;
+                        
                         animalSpawner.counter -= 1;
                         Destroy(congaLine.followers[i].gameObject);
                         congaLine.followers[i] = null;
