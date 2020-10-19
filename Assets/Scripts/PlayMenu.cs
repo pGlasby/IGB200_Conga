@@ -155,7 +155,7 @@ public class PlayMenu : MonoBehaviour
     //Quest functions
     public void QuestPossum()
     {
-        float price = 20;
+        float price = 0;
         if (alltimeVariables.coins >= price)
         {
             alltimeVariables.coins -= price;
@@ -177,7 +177,7 @@ public class PlayMenu : MonoBehaviour
     }
     public void QuestGecko()
     {
-        float price = 20;
+        float price = 0;
         if (alltimeVariables.coins >= price)
         {
             alltimeVariables.coins -= price;
@@ -199,7 +199,7 @@ public class PlayMenu : MonoBehaviour
     }
     public void QuestSnake()
     {
-        float price = 20;
+        float price = 0;
         if (alltimeVariables.coins >= price)
         {
             alltimeVariables.coins -= price;
@@ -219,7 +219,7 @@ public class PlayMenu : MonoBehaviour
     }
     public void QuestFish()
     {
-        float price = 20;
+        float price = 0;
         if (alltimeVariables.coins >= price)
         {
             alltimeVariables.coins -= price;
@@ -241,7 +241,7 @@ public class PlayMenu : MonoBehaviour
     }
     public void QuestBird()
     {
-        float price = 20;
+        float price = 0;
         if (alltimeVariables.coins >= price)
         {
             alltimeVariables.coins -= price;

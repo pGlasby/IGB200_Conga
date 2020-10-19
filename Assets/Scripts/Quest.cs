@@ -60,8 +60,8 @@ public class Quest : MonoBehaviour
                 }
                 if(i == 1)
                 {
-                    value = 5;
-                    animalName = "BIRDS";
+                    value = 3;
+                    animalName = "GECKOS";
                     gameManager.questValue = value;
                     questText.text = "Collect " + gameManager.questValue + " " + animalName;
 
@@ -83,7 +83,7 @@ public class Quest : MonoBehaviour
                 if(i == 4)
                 {
                     value = 5;
-                    animalName = "GECKOS";
+                    animalName = "BIRDS";
                     gameManager.questValue = value;
                     questText.text = "Collect " + gameManager.questValue + " " + animalName;
                 }
