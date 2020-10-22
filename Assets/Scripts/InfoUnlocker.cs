@@ -7,7 +7,6 @@ using TMPro;
 public class InfoUnlocker : MonoBehaviour
 {
     private AlltimeVariables alltimeVariables;
-    public Text[] textInfo = new Text[5];
     public TMP_Text[] textInfoPro = new TMP_Text[5];
     // Start is called before the first frame update
     void Start()
@@ -18,14 +17,14 @@ public class InfoUnlocker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for(int i = 0; i<textInfo.Length; i++)
+        for(int i = 0; i<textInfoPro.Length; i++)
         {
             try
             {
                 if (alltimeVariables.questCompletionChecker[i] == false)
                 {
 
-                    textInfoPro[i].text = "UNAVAILABLE";
+                    textInfoPro[i].text = "Complete the quest to unlock more information about this animal.";
                 }
             }
             catch (System.NullReferenceException)

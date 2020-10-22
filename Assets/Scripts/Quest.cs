@@ -37,8 +37,8 @@ public class Quest : MonoBehaviour
             {
                 if(alltimeVariables.questChecker[i] == true)
                 {
-                    temp = i;
-                    alltimeVariables.questCompletionChecker[temp] = true;
+                    //temp = i;
+                    alltimeVariables.questCompletionChecker[i] = true;
                 }
             }
 

@@ -722,7 +722,7 @@ GameObject:
   - component: {fileID: 110784529}
   - component: {fileID: 110784528}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: possumInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1197,13 +1197,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   highScore: 0
-  coins: 50
+  coins: 0
   coinBackUp: 0
   buyNotEnoughCoins: 0
   timeSetting:
   - 180
   - 120
-  - 30
+  - 60
   multiplierSetting:
   - 1
   - 2
@@ -1351,7 +1351,7 @@ RectTransform:
   m_Children:
   - {fileID: 1012178899}
   m_Father: {fileID: 1476717969}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2254,17 +2254,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70a0ca5c32b824199805bbbfea421b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInfo:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   textInfoPro:
   - {fileID: 110784528}
   - {fileID: 594091256}
-  - {fileID: 1413968878}
   - {fileID: 1981714779}
+  - {fileID: 1413968878}
   - {fileID: 1855719696}
 --- !u!114 &434889323
 MonoBehaviour:
@@ -2841,7 +2835,7 @@ GameObject:
   - component: {fileID: 594091257}
   - component: {fileID: 594091256}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: GeckoInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3022,7 +3016,7 @@ RectTransform:
   m_Children:
   - {fileID: 1816985567}
   m_Father: {fileID: 1476717969}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5712,7 +5706,7 @@ RectTransform:
   m_Children:
   - {fileID: 740264487}
   m_Father: {fileID: 1476717969}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6413,7 +6407,7 @@ RectTransform:
   m_Children:
   - {fileID: 996184983}
   m_Father: {fileID: 1476717969}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7544,8 +7538,7 @@ MonoBehaviour:
     State School.  The group aims to improve habitat and stabilise creek banks, along
     with engaging school students in caring for the environment.
 
-
-    https://www.facebook.com/BurandaBCC/'
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8184,7 +8177,7 @@ GameObject:
   - component: {fileID: 1413968879}
   - component: {fileID: 1413968878}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: FishInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8444,12 +8437,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1797352667}
   - {fileID: 1077666692}
   - {fileID: 619892875}
   - {fileID: 1642887213}
   - {fileID: 246199932}
   - {fileID: 987392764}
+  - {fileID: 1797352667}
   - {fileID: 1858102477}
   - {fileID: 1925232282}
   - {fileID: 1611514994}
@@ -9230,7 +9223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1611514994
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9285,7 +9278,7 @@ RectTransform:
   m_Children:
   - {fileID: 694007368}
   m_Father: {fileID: 1476717969}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9958,7 +9951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1797352667
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9974,7 +9967,7 @@ RectTransform:
   - {fileID: 327792463}
   - {fileID: 110784527}
   m_Father: {fileID: 1476717969}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10364,7 +10357,7 @@ GameObject:
   - component: {fileID: 1855719697}
   - component: {fileID: 1855719696}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: BirdInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11064,7 +11057,7 @@ GameObject:
   - component: {fileID: 1981714780}
   - component: {fileID: 1981714779}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: SnakeInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11248,7 +11241,7 @@ RectTransform:
   m_GameObject: {fileID: 1990413490}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6351, y: 1.6351, z: 1.6351}
   m_Children: []
   m_Father: {fileID: 1132376830}
   m_RootOrder: 5
@@ -11270,14 +11263,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 34d58b7a769e113499b5b59710adca85, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e4e5aece5bab14344b9cd00e82e9d684, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11510,8 +11503,7 @@ MonoBehaviour:
   m_text: 'The Bennetts Bush Defenders are working to restore Bennetts Bushland Park,
     corner Bennetts and D''Arcy Roads Morningside/Norman Park.
 
-
-    https://www.facebook.com/events/938012483331210/'
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

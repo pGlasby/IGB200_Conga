@@ -12,7 +12,7 @@ public class Habitat : MonoBehaviour
     private Vector3 distanceFromPlayer;
     const float distance = 10f;
     private GameManager gameManager;
-
+    private AlltimeVariables alltimeVariables;
 
 
     private void Start()
@@ -20,6 +20,7 @@ public class Habitat : MonoBehaviour
         gameManager = Object.FindObjectOfType<GameManager>();
         congaLine = Object.FindObjectOfType<CongaLineController>();
         animalSpawner = Object.FindObjectOfType<AnimalSpawner>();
+        alltimeVariables = Object.FindObjectOfType<AlltimeVariables>();
     }
 
     //this function is developed for playtesting purposes (delete  before the reliese)
@@ -36,8 +37,13 @@ public class Habitat : MonoBehaviour
                     string name = congaLine.followers[i].name;
                     if (name.ToLower() == type.ToLower())
                     {
-
-                        gameManager.questValue -= 1;
+                        if ((name.ToLower() == "mammal" && alltimeVariables.questChecker[0] == true) || (name.ToLower() == "amphibian" && alltimeVariables.questChecker[1] == true) ||
+                            (name.ToLower() == "reptile" && alltimeVariables.questChecker[2] == true) || (name.ToLower() == "fish" && alltimeVariables.questChecker[3] == true) ||
+                            (name.ToLower() == "bird" && alltimeVariables.questChecker[4] == true))
+                        {
+                            gameManager.questValue -= 1;
+                        }
+                        //gameManager.questValue -= 1;
                         
                         animalSpawner.counter -= 1;
                         Destroy(congaLine.followers[i].gameObject);
