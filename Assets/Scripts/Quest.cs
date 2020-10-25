@@ -68,14 +68,14 @@ public class Quest : MonoBehaviour
                 }
                 if(i == 2)
                 {
-                    value = 5;
+                    value = 20;
                     animalName = "SNAKES";
                     gameManager.questValue = value;
                     questText.text = "Collect " + gameManager.questValue + " " + animalName;
                 }
                 if(i == 3)
                 {
-                    value = 5;
+                    value = 30;
                     animalName = "FISH";
                     gameManager.questValue = value;
                     questText.text = "Collect " + gameManager.questValue + " " + animalName;

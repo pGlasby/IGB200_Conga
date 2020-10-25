@@ -7,9 +7,11 @@ public class TrapSlow : MonoBehaviour
     private GameManager gameManager;
     private float localSpeed;
     private bool isColliding;
+    private AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
+        audio = GetComponent<AudioSource>();
         gameManager = Object.FindObjectOfType<GameManager>();
         localSpeed = gameManager.playerSpeed;
         isColliding = false;
@@ -20,7 +22,7 @@ public class TrapSlow : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-
+            audio.Play();
             isColliding = true;
             gameManager.playerSpeed = gameManager.playerSpeed / 2;
         }

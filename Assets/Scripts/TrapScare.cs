@@ -7,11 +7,12 @@ public class TrapScare : MonoBehaviour
 
     private CongaLineController congaLine;
     private AnimalSpawner animalSpawner;
+    private AudioSource audio;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        audio = GetComponent<AudioSource>();
         animalSpawner = Object.FindObjectOfType<AnimalSpawner>();
         congaLine = Object.FindObjectOfType<CongaLineController>();
     }
@@ -25,6 +26,7 @@ public class TrapScare : MonoBehaviour
             Destroy(congaLine.followers[index].gameObject);
             congaLine.followers[index] = null;
             CongaLineController.instance.counter -= 1;
+            audio.Play();
             
         }
     }

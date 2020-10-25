@@ -10,6 +10,7 @@ public class PlayMenu : MonoBehaviour
     private Shop shop;
     public Button[] buttonsBoosts = new Button[5];
     public Button[] buttonsQuests = new Button[5];
+    private AudioSource audio;
     
     
     // Start is called before the first frame update
@@ -17,6 +18,7 @@ public class PlayMenu : MonoBehaviour
     {
         alltimeVariables = Object.FindObjectOfType<AlltimeVariables>();
         shop = Object.FindObjectOfType<Shop>();
+        audio = GetComponent<AudioSource>();
     }
 
     //difficulty choice functions
@@ -28,6 +30,7 @@ public class PlayMenu : MonoBehaviour
         }
         alltimeVariables.spawnRate = 50;
         alltimeVariables.difficultyChecker[0] = true;
+        audio.Play();
     }
 
     public void MediumDifficulty()
@@ -38,6 +41,7 @@ public class PlayMenu : MonoBehaviour
         }
         alltimeVariables.spawnRate = 35;
         alltimeVariables.difficultyChecker[1] = true;
+        audio.Play();
 
 
     }
@@ -50,6 +54,7 @@ public class PlayMenu : MonoBehaviour
         }
         alltimeVariables.spawnRate = 20;
         alltimeVariables.difficultyChecker[2] = true;
+        audio.Play();
 
     }
 
@@ -65,6 +70,7 @@ public class PlayMenu : MonoBehaviour
             alltimeVariables.coins -= price;
             alltimeVariables.boostChecker[0] = true;
             buttonsBoosts[0].GetComponent<Button>().interactable = false;
+            audio.Play();
         }
         else
         {
@@ -82,6 +88,7 @@ public class PlayMenu : MonoBehaviour
             alltimeVariables.coins -= price;
             alltimeVariables.boostChecker[1] = true;
             buttonsBoosts[3].GetComponent<Button>().interactable = false;
+            audio.Play();
         }
         else
         {
@@ -102,6 +109,7 @@ public class PlayMenu : MonoBehaviour
             alltimeVariables.coins -= price;
             alltimeVariables.boostChecker[2] = true;
             buttonsBoosts[4].GetComponent<Button>().interactable = false;
+            audio.Play();
         }
         else
         {
@@ -121,6 +129,7 @@ public class PlayMenu : MonoBehaviour
             alltimeVariables.coins -= price;
             alltimeVariables.boostChecker[3] = true;
             buttonsBoosts[2].GetComponent<Button>().interactable = false;
+            audio.Play();
         }
         else
         {
@@ -140,6 +149,7 @@ public class PlayMenu : MonoBehaviour
             alltimeVariables.coins -= price;
             alltimeVariables.boostChecker[4] = true;
             buttonsBoosts[1].GetComponent<Button>().interactable = false;
+            audio.Play();
         }
         else
         {
@@ -160,6 +170,7 @@ public class PlayMenu : MonoBehaviour
         {
             alltimeVariables.coins -= price;
             alltimeVariables.questChecker[0] = true;
+            audio.Play();
             for (int i = 0; i < buttonsBoosts.Length; i++)
             {
                 buttonsQuests[i].GetComponent<Button>().interactable = false;
@@ -182,6 +193,7 @@ public class PlayMenu : MonoBehaviour
         {
             alltimeVariables.coins -= price;
             alltimeVariables.questChecker[1] = true;
+            audio.Play();
             for (int i = 0; i < buttonsBoosts.Length; i++)
             {
                 buttonsQuests[i].GetComponent<Button>().interactable = false;
@@ -204,6 +216,7 @@ public class PlayMenu : MonoBehaviour
         {
             alltimeVariables.coins -= price;
             alltimeVariables.questChecker[2] = true;
+            audio.Play();
             for (int i = 0; i < buttonsBoosts.Length; i++)
             {
                 buttonsQuests[i].GetComponent<Button>().interactable = false;
@@ -224,6 +237,7 @@ public class PlayMenu : MonoBehaviour
         {
             alltimeVariables.coins -= price;
             alltimeVariables.questChecker[3] = true;
+            audio.Play();
             for (int i = 0; i < buttonsBoosts.Length; i++)
             {
                 buttonsQuests[i].GetComponent<Button>().interactable = false;
@@ -246,6 +260,7 @@ public class PlayMenu : MonoBehaviour
         {
             alltimeVariables.coins -= price;
             alltimeVariables.questChecker[4] = true;
+            audio.Play();
             for (int i = 0; i < buttonsBoosts.Length; i++)
             {
                 buttonsQuests[i].GetComponent<Button>().interactable = false;
