@@ -16,6 +16,7 @@ public class Animal : MonoBehaviour
     private Transform player;
     private GameManager gameManager;
 
+    public Animator animator;
     // Update is called once per frame
 
     private void Start()
@@ -23,6 +24,7 @@ public class Animal : MonoBehaviour
         gameManager = Object.FindObjectOfType<GameManager>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         this.name = animalName;
+        animator = GetComponent<Animator>();
     }
 
 
@@ -90,6 +92,7 @@ public class Animal : MonoBehaviour
                 this.GetComponent<Collider>().isTrigger = false;
                 Destroy(this.GetComponent<Collider>());
                 CongaLineController.instance.counter += 1;
+                animator.SetBool("isCatched", true);
                 print(this.name);
             }
             else

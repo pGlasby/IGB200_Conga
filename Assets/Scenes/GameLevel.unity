@@ -12635,6 +12635,7 @@ GameObject:
   - component: {fileID: 459987168}
   - component: {fileID: 459987170}
   - component: {fileID: 459987169}
+  - component: {fileID: 459987171}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -12771,6 +12772,25 @@ MonoBehaviour:
   turnSmoothVelocity: 0
   gameManager: {fileID: 1569111305}
   joystick: {fileID: 1657851112}
+--- !u!95 &459987171
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459987163}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1913a55c00d516340936ebc8cafb0845, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &461107773
 PrefabInstance:
   m_ObjectHideFlags: 0

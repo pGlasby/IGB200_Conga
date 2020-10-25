@@ -15,8 +15,12 @@ public class PlayerController : MonoBehaviour
     public GameManager gameManager;
     public Joystick joystick;
 
+    //public Animator animation;
 
-
+    private void Start()
+    {
+        //animation = GetComponent<Animator>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -35,7 +39,7 @@ public class PlayerController : MonoBehaviour
             vertical = joystick.Vertical;
         }
 
-
+        //animation.SetFloat("isWalking", Mathf.Abs(horizontal));
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
         if (direction.magnitude >= 0.1f)
