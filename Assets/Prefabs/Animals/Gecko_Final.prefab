@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 3099530126955786815}
   - component: {fileID: -2911616307892344042}
   m_Layer: 0
-  m_Name: gecko_final
+  m_Name: Gecko_Final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3d133c3a90d467e80b928f97a9943e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalName: gecko
+  animalName: amphibian
   animator: {fileID: 0}
 --- !u!33 &-326639677204717216
 MeshFilter:
@@ -506,8 +506,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.921497, y: 2.291341, z: 3.7110798}
-  m_Center: {x: -0.34505117, y: 0.6456705, z: 0.11473451}
+  m_Size: {x: 7.9264956, y: 2.8469145, z: 5.2966185}
+  m_Center: {x: -0.17578852, y: 0.92345685, z: 0.13853285}
 --- !u!1 &7041957579530582669
 GameObject:
   m_ObjectHideFlags: 0

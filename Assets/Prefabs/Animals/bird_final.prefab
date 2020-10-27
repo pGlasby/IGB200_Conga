@@ -213,8 +213,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.2644415, y: 4.519406, z: 6.884238}
-  m_Center: {x: 0.12611519, y: 1.7597026, z: -0.84731925}
+  m_Size: {x: 6.3322678, y: 5.5345592, z: 9.386507}
+  m_Center: {x: 0.16137232, y: 2.2672791, z: -0.70824915}
 --- !u!54 &-7395928152832821215
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -244,6 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalName: bird
+  animator: {fileID: 0}
 --- !u!64 &-895253540941252877
 MeshCollider:
   m_ObjectHideFlags: 0
