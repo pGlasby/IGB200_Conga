@@ -83,7 +83,7 @@ public class Animal : MonoBehaviour
     //this function is developed for playtesting purposes (delete before the release)
     private void OnTriggerEnter(Collider other)
     {
-        if(other.transform == player && gameManager.phoneVersion == false)
+        if(other.transform == player)
         {
             isActive = true;
             if (CongaLineController.instance.followers[4] == null)
