@@ -13441,6 +13441,7 @@ MonoBehaviour:
   turnSmoothVelocity: 0
   gameManager: {fileID: 1569111305}
   joystick: {fileID: 1657851112}
+  animation: {fileID: 1571891105}
 --- !u!95 &459987171
 Animator:
   serializedVersion: 3
@@ -13449,7 +13450,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 459987163}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 1913a55c00d516340936ebc8cafb0845, type: 2}
   m_CullingMode: 0
@@ -42169,7 +42170,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571891102}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecfe277c486ad5a4f81c749d79f693d1, type: 3}
   m_Name: 

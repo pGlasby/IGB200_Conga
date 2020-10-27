@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public GameManager gameManager;
     public Joystick joystick;
 
-    //public Animator animation;
+    public Animator animation;
 
     private void Start()
     {
@@ -32,14 +32,70 @@ public class PlayerController : MonoBehaviour
         {
             horizontal = Input.GetAxisRaw("Horizontal");
             vertical = Input.GetAxisRaw("Vertical");
+            if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow))
+            {
+                animation.SetBool("isWalking", true);
+
+            }
+            else if (Input.GetKey("a") || Input.GetKey(KeyCode.DownArrow))
+            {
+                animation.SetBool("isWalking", true);
+
+            }
+            else if (Input.GetKey("s") || Input.GetKey(KeyCode.RightArrow))
+            {
+                animation.SetBool("isWalking", true);
+            }
+            else if (Input.GetKey("d") || Input.GetKey(KeyCode.LeftArrow))
+            {
+                animation.SetBool("isWalking", true);
+            }
+            else
+                animation.SetBool("isWalking", false);
         }
         if (gameManager.phoneVersion == true)
         {
             horizontal = joystick.Horizontal;
             vertical = joystick.Vertical;
+            if (Mathf.Abs(horizontal) > 0 || Mathf.Abs(vertical) > 0)
+            {
+                animation.SetBool("isWalking", true);
+            }
+            if (Mathf.Abs(horizontal) == 0 || Mathf.Abs(vertical) == 0)
+            {
+                animation.SetBool("isWalking", false);
+            }
         }
+        /*if (Mathf.Abs(horizontal) > 0 || Mathf.Abs(vertical) > 0)
+        {
+            animation.SetBool("isWalking", true);
+        }
+        if (Mathf.Abs(horizontal) == 0 || Mathf.Abs(vertical) == 0)
+        {
+            animation.SetBool("isWalking", false);
+        }*/
+        /*if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow))
+        {
+            animation.SetBool("isWalking", true);
 
-        //animation.SetFloat("isWalking", Mathf.Abs(horizontal));
+        }
+        else if (Input.GetKey("a") || Input.GetKey(KeyCode.DownArrow))
+        {
+            animation.SetBool("isWalking", true);
+
+        }
+        else if (Input.GetKey("s") || Input.GetKey(KeyCode.RightArrow))
+        {
+            animation.SetBool("isWalking", true);
+        }
+        else if (Input.GetKey("d") || Input.GetKey(KeyCode.LeftArrow))
+        {
+            animation.SetBool("isWalking", true);
+        }
+        else
+            animation.SetBool("isWalking", false);*/
+        
+
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
         if (direction.magnitude >= 0.1f)
