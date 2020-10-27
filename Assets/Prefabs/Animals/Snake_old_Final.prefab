@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1698092824096962813
+--- !u!1 &7591899630037505794
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2079263081866732103}
-  - component: {fileID: 3131370997724163554}
-  - component: {fileID: 905269829166946600}
-  - component: {fileID: 4625106327180298602}
-  - component: {fileID: 7890708181759089158}
-  - component: {fileID: 7312639080974714460}
-  - component: {fileID: 1697923009516809872}
+  - component: {fileID: 7066157513120304568}
+  - component: {fileID: 6178889505847722525}
+  - component: {fileID: 8240219583007536855}
+  - component: {fileID: 7994079432067912684}
+  - component: {fileID: 4390254419745749053}
+  - component: {fileID: 3599660587250335898}
+  - component: {fileID: 6299278057260620760}
   m_Layer: 0
-  m_Name: bird_final
+  m_Name: Snake_Final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2079263081866732103
+--- !u!4 &7066157513120304568
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698092824096962813}
+  m_GameObject: {fileID: 7591899630037505794}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.361618, y: 0.02666378, z: -8.074875}
-  m_LocalScale: {x: 0.16481, y: 0.16481, z: 0.16481}
+  m_LocalPosition: {x: 6.211609, y: 0.44, z: -6.98}
+  m_LocalScale: {x: 0.36187, y: 0.36187, z: 0.36187}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3131370997724163554
+--- !u!33 &6178889505847722525
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698092824096962813}
-  m_Mesh: {fileID: -5755197145248551033, guid: 8ddfbad538d5e5241a6344d3469ccceb, type: 3}
---- !u!23 &905269829166946600
+  m_GameObject: {fileID: 7591899630037505794}
+  m_Mesh: {fileID: 563788531843775990, guid: 936f7a83371579a4ab3e81e67a2df25b, type: 3}
+--- !u!23 &8240219583007536855
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698092824096962813}
+  m_GameObject: {fileID: 7591899630037505794}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7439b316ddeec594b9b730e2f9657e03, type: 2}
+  - {fileID: 2100000, guid: 6bbe440995146c445b20c7cb0d20b735, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,26 +83,26 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &4625106327180298602
+--- !u!65 &7994079432067912684
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698092824096962813}
+  m_GameObject: {fileID: 7591899630037505794}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 7, z: 10}
-  m_Center: {x: 0, y: 3.23, z: -0.94659543}
---- !u!54 &7890708181759089158
+  m_Size: {x: 4, y: 4, z: 20.070852}
+  m_Center: {x: -0.00000023841858, y: 1.3, z: 0}
+--- !u!54 &4390254419745749053
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698092824096962813}
+  m_GameObject: {fileID: 7591899630037505794}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -112,30 +112,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7312639080974714460
+--- !u!114 &3599660587250335898
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698092824096962813}
+  m_GameObject: {fileID: 7591899630037505794}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f3d133c3a90d467e80b928f97a9943e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalName: bird
---- !u!95 &1697923009516809872
+  animalName: reptile
+  animator: {fileID: 0}
+--- !u!95 &6299278057260620760
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698092824096962813}
-  m_Enabled: 0
-  m_Avatar: {fileID: 9000000, guid: 7c92028c7634c22419d0ef7a79af10f8, type: 3}
-  m_Controller: {fileID: 9100000, guid: e8827d0b948397642b8e4066544722cc, type: 2}
+  m_GameObject: {fileID: 7591899630037505794}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e040501a34e6b44693c1554bb0a961e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

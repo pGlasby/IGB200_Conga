@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: bbaac9e0ffaa40149ae759e21ad37623
+guid: 76f6f8d45753dac47a78ffb03f0fdd54
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: possumIdle
+    second: geckoJump2
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: possumIdle
+      name: geckoJump2
       takeName: Take 001
       internalID: 0
       firstFrame: 0
@@ -122,7 +122,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
